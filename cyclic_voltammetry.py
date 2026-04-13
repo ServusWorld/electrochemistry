@@ -6,7 +6,8 @@ class CV:
         # volts: array of potential values (in Volts)
         # amps: array of current values (in Amperes)
         if volts.ndim != 1 or amps.ndim != 1 or volts.shape != amps.shape:
-               raise ValueError("volts and amps must be 1d numpy arrays of same size")
+               
+                raise ValueError("volts and amps must be 1d numpy arrays of same size")
 
         self.volts = volts
         self.amps = amps
